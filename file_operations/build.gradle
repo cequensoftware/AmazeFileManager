@@ -59,9 +59,8 @@ cargo {
     targets = ["arm", "arm64", "x86", "x86_64"]
     profile = "release"
     
-    // Optional: Use cargo and rustc from the path
-    rustcCommand = "rustc"
-    cargoCommand = "cargo"
+    rustcCommand = System.getenv("HOME") + "/.cargo/bin/rustc"
+    cargoCommand = System.getenv("HOME") + "/.cargo/bin/cargo"
     pythonCommand = "python3"
 }
 
